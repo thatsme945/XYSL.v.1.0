@@ -1,0 +1,526 @@
+p,
+a {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+/* 顶部固定栏 */
+header .topfixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 6.6rem;
+    /* background-color: rgb(221, 223, 211); */
+    background-color: #599165;
+    border-bottom: 3px solid rgb(180, 180, 180);
+}
+
+header .topfixed .logo {
+    position: absolute;
+    left: 6rem;
+    top: 1rem;
+    width: 14rem;
+    height: 4rem;
+    /* background-color: rgb(0, 0, 0);
+    border: 3px solid rgb(180, 180, 180); */
+
+}
+
+header .topfixed .logo p {
+    font-size: 3rem;
+}
+
+header .topfixed .search {
+    position: absolute;
+    /* left: 30rem; */
+    left: 50%;
+    margin-left: -29rem;
+    top: 1.5rem;
+    width: 50rem;
+    height: 3rem;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(180, 180, 180);
+    border-radius: 100rem;
+}
+
+header .topfixed .search .iconfont {
+    color: #333;
+    font-size: 2.2rem;
+    padding-left: 47rem;
+    line-height: 3rem;
+}
+
+header .topfixed .text {
+    position: absolute;
+    right: 18rem;
+    top: 2rem;
+    height: 4rem;
+}
+
+header .topfixed .text a {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+header .topfixed .user {
+    display: flex;
+    flex-direction: row;
+    /* 主轴从左到右 */
+    position: absolute;
+    right: 6rem;
+    top: 1rem;
+    /* width: 10rem; */
+    height: 4rem;
+}
+
+header .topfixed .user .avatar {
+    /* position: absolute;
+     left: 0;
+     top: 0; */
+    width: 4rem;
+    height: 4rem;
+    background-color: rgb(0, 0, 0);
+    /* background-image: url(images/tree.png);
+     background-size: contain; */
+    /* 将图像调整到适合框内的尺寸 */
+    /* border: 1px solid rgb(225, 225, 225); */
+    border-radius: 100%;
+}
+
+header .topfixed .user .avatar img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+}
+
+header .topfixed .user .information {
+    /* position: absolute;
+     right: 0;
+     top: 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 1.8rem;
+}
+
+header .topfixed .user .information p,
+header .topfixed .user .information a {
+    font-size: 1.1rem;
+}
+
+/* header .topfixed .user {
+    position: absolute;
+    right: 4rem;
+    top: 1rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: rgb(243, 244, 222);
+    border: 3px solid rgb(180, 180, 180);
+    border-radius: 100%;
+} */
+
+/* header .topfixed .mailbox {
+    position: absolute;
+    right: 8rem;
+    top: 1rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid rgb(180, 180, 180);
+    border-radius: 100%;
+} */
+
+
+
+/* 左侧固定栏 */
+header .leftfixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 26rem;
+    height: 100%;
+    background-color: rgba(243, 244, 222, 0.25);
+    /* border-right: 3px solid rgb(180, 180, 180); */
+    box-shadow: 1vw 2vh 5vh rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+}
+
+/* header .leftfixed::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 26rem;
+    height: 100%;
+    filter: blur(20px);
+} */
+
+header .leftfixed .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 3rem;
+    top: 11rem;
+    width: 20rem;
+    height: 25rem;
+}
+
+header .leftfixed .options li {
+    width: 100%;
+    height: 4rem;
+    /* background-color: rgb(118, 87, 81); */
+    background-color: rgb(81, 118, 96);
+    /* border: 3px solid rgb(180, 180, 180); */
+    border: 3px solid rgb(180, 180, 180);
+    border-radius: 1rem;
+}
+
+header .leftfixed .options li a {
+    display: block;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 4rem;
+}
+
+header .leftfixed .user {
+    position: absolute;
+    left: 3rem;
+    bottom: 3rem;
+    width: 20rem;
+    height: 4rem;
+    /* background-color: rgb(118, 87, 81); */
+    /* background-color: rgb(81, 118, 96); */
+    background-color: #076A32;
+    border: 3px solid rgb(180, 180, 180);
+    border-radius: 1rem;
+}
+
+header .leftfixed .user a {
+    display: block;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 4rem;
+}
+
+/* header .leftfixed .options .button {
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid rgb(180, 180, 180);
+    border-radius: 1rem;
+} */
+
+
+/* 右侧固定栏 */
+header .rightfixed .moodtags1 {
+    position: fixed;
+    /* right: 1.5rem; */
+    right: 3rem;
+    /* top: 7.5rem; */
+    top: 8.5rem;
+    height: 30rem;
+    width: 30rem;
+    /* background-color: #2B7743; */
+    background-color: rgba(243, 244, 222, 0.25);
+    /* border: 3px solid rgb(180, 180, 180); */
+    border-radius: 1rem;
+    box-shadow: 1vw 2vh 5vh rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+    margin-top: 2.7rem;
+}
+
+header .rightfixed .moodtags1 p.top {
+    color: #076A32;
+    text-shadow: 1px 1px 5px rgb(169, 222, 181), 0 0 2rem rgb(255, 255, 255), 0 0 1rem rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    margin-top: 1.5rem;
+}
+
+header .rightfixed .moodtags1 .buttons {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    margin: 2.3rem 3rem 0 3.8rem;
+}
+
+header .rightfixed .moodtags1 button {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0 1.5rem 1.5rem 0;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 4rem;
+    background-color: #5A9066;
+}
+
+header .rightfixed .moodtags2 {
+    position: fixed;
+    /* right: 1.5rem; */
+    right: 3rem;
+    /* top: 39rem; */
+    top: 41rem;
+    height: 30rem;
+    width: 30rem;
+    background-color: rgba(243, 244, 222, 0.25);
+    /* border: 3px solid rgb(180, 180, 180); */
+    border-radius: 1rem;
+    box-shadow: 1vw 2vh 5vh rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+    margin-top: 3.2rem;
+}
+
+header .rightfixed .moodtags2 p.top {
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0), 0 0 2rem rgb(0, 0, 0), 0 0 1rem rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    margin-top: 1.3rem;
+}
+
+header .rightfixed .moodtags2 .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    height: 23.6rem;
+}
+
+header .rightfixed .moodtags2 .options li {
+    width: 60%;
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 1rem;
+    padding: 0.3rem 0;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+header .rightfixed .moodtags2 .options li:hover {
+    height: 3rem;
+    width: 70%;
+}
+
+header .rightfixed .moodtags2 .options li a:hover {
+    height: 3rem;
+    font-size: 1.8rem;
+
+}
+
+header .backbutton {
+    position: fixed;
+    /* right: 26.5rem; */
+    right: 3.3rem;
+    bottom: 3.3rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: rgb(243, 244, 222);
+    border: 3px solid rgb(180, 180, 180);
+    border-radius: 1rem;
+}
+
+header .backbutton p {
+    color: #000000;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    /* text-align: center; */
+}
+
+header .start {
+    position: fixed;
+    /* right: 26.5rem; */
+    right: 11.3rem;
+    bottom: 3.3rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: rgba(243, 244, 222, 0.25);
+    border: 3px solid rgb(180, 180, 180);
+    border-radius: 1rem;
+    box-shadow: 1vw 2vh 5vh rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+}
+
+header .start p {
+    color: white;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    /* text-align: center; */
+}
+
+/* 主体 */
+main {
+    position: relative;
+    /* z-index: -1; */
+    width: auto;
+    height: 180vh;
+    background-color: rgba(243, 244, 222, 0);
+    /* border: 3px solid rgb(180, 180, 180); */
+    border-radius: 1rem;
+    /* margin: 7.5rem 33rem 0 27.5rem; */
+    margin: 8.5rem 35rem 0 28.5rem;
+}
+
+main .first {
+    position: absolute;
+    margin: 2.7rem 6vh;
+    width: 104vh;
+    height: 40vh;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: rgba(243, 244, 222, 0.25);
+    box-shadow: 1vw 2vh 5vh rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+}
+
+main .dynamic {
+    display: flex;
+    display: block;
+}
+
+main .userimg {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #eee;
+    border-radius: 100%;
+    /* border: 2px solid rgb(180, 180, 180); */
+}
+
+main .username {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    left: 6.5rem;
+    height: 1.5rem;
+    color: #333;
+    font-size: 12px;
+}
+
+main .dynamic .time {
+    font-size: 1rem;
+    position: absolute;
+    top: 4rem;
+    left: 6.5rem;
+    color: #8e8282;
+}
+
+main .dynamic .content p {
+    position: absolute;
+    top: 7.5rem;
+    left: 2.5rem;
+    font-size: 14px;
+    color: #333;
+}
+
+main .dynamic .content .img1 {
+    position: absolute;
+    top: 10rem;
+    left: 2.5rem;
+    height: 15rem;
+    width: 13rem;
+}
+
+main .dynamic .content .img2 {
+    position: absolute;
+    top: 10rem;
+    left: 17rem;
+    height: 15rem;
+    width: 13rem;
+}
+
+main .dynamic .content .img3 {
+    position: absolute;
+    top: 10rem;
+    left: 31.5rem;
+    height: 15rem;
+    width: 13rem;
+}
+
+main .dynamic .content .img4 {
+    position: absolute;
+    top: 10rem;
+    left: 46rem;
+    height: 15rem;
+    width: 13rem;
+}
+
+main .dynamic .zan .iconfont {
+    position: absolute;
+    top: 24.5rem;
+    left: 68rem;
+    height: 3rem;
+    width: 3rem;
+    color: #333;
+    font-size: 28px;
+}
+
+main .dynamic .ping .iconfont {
+    position: absolute;
+    top: 25rem;
+    left: 73rem;
+    height: 3rem;
+    width: 3rem;
+    color: #333;
+    font-size: 22px;
+}
+
+main .second {
+    position: absolute;
+    margin: 2vh 6vh;
+    width: 104vh;
+    height: 40vh;
+    top: 45vh;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: rgba(243, 244, 222, 0.25);
+    box-shadow: 1vw 2vh 5vh rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+}
+
+main .third {
+    position: absolute;
+    margin: 1vh 6vh;
+    width: 104vh;
+    height: 40vh;
+    top: 90vh;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: rgba(243, 244, 222, 0.25);
+    box-shadow: 1vw 2vh 5vh rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+}
+
+main .fourth {
+    position: absolute;
+    margin: 0vh 6vh;
+    width: 104vh;
+    height: 40vh;
+    top: 135vh;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: rgba(243, 244, 222, 0.25);
+    box-shadow: 1vw 2vh 5vh rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+}
+
+main a:hover {
+    /* background-color: #cbb4a1; */
+    /* background-color: #b9cfa1; */
+    background-color: rgba(243, 244, 222, 0.4);
+    box-shadow: 1vw 2vh 5vh rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(6px);
+}
